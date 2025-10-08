@@ -9,10 +9,14 @@ const Bookmarks = ({bookmarks, readingTime}) => {
             </div>
             <h2 className="text-3xl text-center ">Bookmarked Blogs: {bookmarks.length}</h2>
             {
-                bookmarks.map((bookmark, idx) => <Bookmark key={idx} bookmark={bookmark}></Bookmark> )
+                bookmarks.map((bookmark, index) => <Bookmark 
+                    key={index} 
+                    bookmark={bookmark}></Bookmark> )
             }
         </div>
   )
 }
 
 export default Bookmarks
+
+// React Developer Tools -> Components Extension lagbe in Chrome -> btn kon component er ber korte parbo
